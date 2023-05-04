@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View 렌더링</title>
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+
+  body{
+
+    font-family: "Signika Negative", sans-serif;
+  }
+  h2{
+    text-shadow: 2px 2px 2px gray;
+    color: darkgreen;
+  }
+  b{
+    background-color: lightcoral;
+    color: white;
+  }
+  h3{text-shadow: 2px 2px 2px gray;
+    color: dodgerblue;
+
+  }
+  a{
+    text-decoration: none;
+  }
+  li{
+    list-style-type: square;
+
+  }
+
+</style>
+<body oncontextmenu="return false" onselectstart="return false">
+    <fieldset>
+      <legend><h2>템플릿 엔진의 등장과 view 렌더의 개념을 알아보자~</h2></legend>
+      <p>model1 :동적페이지 view 포함되어 있는 형태</p>
+      <p>model2: MVC 패턴으로 구현한 웹앱</p>
+      <p>MVC 패턴 : 동적페이지를 DB를 접속하는 부분(Model)과 요청을 처리하는 부분(Controller) View 를 분리하는 구조</p>
+        <h3>템플릿 엔진 (view 를 렌더링 하는 엔진)</h3>
+
+        <h3>model1 deptList
+            <a href="/deptListModel1.do">고~</a>
+        </h3>
+        <h3>html 파일을 분리한 후 fs 로 불러서 deptList 를Object 를 js 로 반환 후 클라이언트가 렌더
+            <a href="/deptList.do">고~</a>
+        </h3>
+        <h3>deptList.pug 로 렌더링한 deptList
+            <a href="/deptListPug.do">고~</a>
+        </h3>
+        <h3>empList.pug 로 렌더링한 deptList
+            <a href="/empListPug.do">고~</a>
+        </h3>L05EmpDetail.do
+        <h3>empList.pug 로 렌더링한 deptDetail
+            <a href="/L05EmpDetail.do">고~</a>
+        </h3>
+
+
+    </fieldset>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+body{
+    background-color: rgba(161, 245, 215, 0.47);
+}
+p{
+    color: white;
+    text-shadow: 2px 2px 2px gray;
+    text-align: center;
+}
+div{
+    color: white;
+    text-shadow: 2px 2px 2px gray;
+    text-align: center;
+}
+a{
+    color: hotpink;
+    text-shadow: 2px 2px 2px gray;
+    font-size: large;
+    text-decoration: none;
+}
+h1{
+    color: lightpink;
+    text-shadow: 2px 2px 2px gray;
+    text-align: center;
+}
+h2{
+    color: gold;
+    text-shadow: 2px 2px 2px gray;
+}
+h4{
+    color: teal;
+    text-shadow: 1px 1px 1px gray;
+}
+#main{
+    font-weight: bold;
+    font-style: italic;
+    color: teal;
+    animation: main 2s infinite;
+}
+input{
+
+    margin-left: 10px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    outline-style: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes main {
+    from{opacity: 0%}
+    to{opacity: 100%}
+
+}

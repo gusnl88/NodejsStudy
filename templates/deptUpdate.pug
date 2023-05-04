@@ -1,0 +1,23 @@
+html(lang="en")
+    head
+        title SCOTT.emp CRUD
+        meta(charset="UTF-8")
+        link(rel="stylesheet" href="/public/css/empList.css")
+
+    body
+        a(id="main" href="http://localhost:8888") 메인
+        form( name="deptUpdateForm",action="/deptUpdate.do",method="POST")
+            p
+                span 부서 번호:
+                //input(value=dept.DEPTNO,name="newDeptno")
+                input(value=dept.DEPTNO,name="deptno",type="hidden")
+            p
+                span 부서 이름:
+                input(value=dept.DNAME,name="dname")
+            p
+                span 근무지:
+                input(value=dept.LOC,name="loc")
+            p
+                a(href="deptDelete.do?deptno=" +dept.DEPTNO) 삭제
+                br
+                button(type="submit") 수정제출

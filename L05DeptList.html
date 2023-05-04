@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>부서리스트</title>
+</head>
+<body>
+    <fieldset>
+      <legend><h2>집 나간 프론트엔드 개발자 컴백홈~</h2></legend>
+        <p>정상적인 방법이 아닙니다~</p>
+      <h3>부서리스트</h3>
+      <table>
+        <thea>
+          <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>위치</th>
+          </tr>
+        </thea>
+
+
+      <tbody id="deptTbody">
+
+
+      </tbody>
+      </table>
+        <script>
+            console.log(deptList)
+            const deptTbody=document.getElementById("deptTbody");
+            let html ="";
+
+            for (const dept of deptList){
+                html+="<tr>";
+                html+=`<td>${dept["DEPTNO"]}</td>`;
+                html+=`<td>${dept["DNAME"]}</td>`;
+                html+=`<td>${dept["LOC"]}</td>`;
+                html+="</tr>";
+            }
+            deptTbody.innerHTML= html;
+        </script>
+    </fieldset>
+</body>
+</html>

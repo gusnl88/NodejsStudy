@@ -1,0 +1,21 @@
+html(lang="en")
+    head
+        title SCOTT.emp CRUD
+        meta(charset="UTF-8")
+        link(rel="stylesheet" href="/public/css/empList.css")
+
+    body
+        a(id="main" href="http://localhost:8888") 메인
+        h1 부서 입력 폼
+        form( name="deptInsertForm",action="/deptInsert.do",method="POST")
+            p
+                span 부서 번호:
+                input(value="",name="deptno")
+            p
+                span 부서 이름:
+                input(value="",name="dname")
+            p
+                span 근무지:
+                input(value="",name="loc")
+            p
+                button(type="submit") 등록 제출
